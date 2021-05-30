@@ -1,0 +1,13 @@
+import random
+print('猜拳游戏！')
+player = int(input('请输入（1）剪刀 （2）石头 （3）布:'))
+print('用户输入的是:', player)
+computer = random.randint(1, 3)
+print('电脑的输出为:', computer)
+if (player == 1 and computer == 3) or (player == 2 and computer == 1) or (player == 3 and computer == 1):
+    print('恭喜你，你赢了！')
+    print('有本事在来一局！》》》 你不要跑')
+elif (player == computer):
+    print('平局，请不要跑决战到天亮！')
+elif (player == 1 and computer == 2) or (player == 2 and computer == 3) or (player == 3 and computer == 1):
+    print('你个菜鸡，你输了！')
